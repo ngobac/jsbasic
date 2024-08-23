@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoJSON Map Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>GeoJSON Map Viewer</h1>
+        </header>
+        <main>
+            <div id="map"></div>
+            <div id="controls">
+                <input type="file" id="file-input" accept=".geojson,.json">
+                <button id="load-sample">Load Sample Data</button>
+                <select id="filter-select">
+                    <option value="">All Features</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search...">
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
